@@ -5,7 +5,7 @@ You can save yourself the hassle by editing wg-wizard.json file to define the pe
 This auto-configuration script has been tested on Ubuntu 22.04.
 
 ## Requirements
-- Ubuntu 20+
+- Ubuntu 18+
 - Python 3.6+
 
 ## Quick start
