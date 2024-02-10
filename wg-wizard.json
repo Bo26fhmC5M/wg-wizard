@@ -1,0 +1,22 @@
+{
+  "peer1": [
+    {
+      "protocol" : "tcp",
+      "port-range" : "40000-40099"
+    },
+    {
+      "protocol" : "udp",
+      "port-range" : "40000-40099"
+    }
+  ],
+  "peer2": [
+    {
+      "protocol" : "tcp",
+      "port-range" : "40100-40199"
+    },
+    {
+      "protocol" : "udp",
+      "port-range" : "40100-40199"
+    }
+  ]
+}
