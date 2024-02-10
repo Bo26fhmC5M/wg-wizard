@@ -6,7 +6,7 @@ This auto-configuration script has been tested on Ubuntu 22.04.
 
 ## Requirements
 - Ubuntu 20+
-- Python 3.6
+- Python 3.6+
 
 ## Quick start
 - Once your server is configured successfully, auto setup script(auto-setup-#.py) for your client will be generated. Upload this script to your client and run it.
