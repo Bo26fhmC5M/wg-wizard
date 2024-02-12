@@ -53,17 +53,9 @@ def verify_config(dict_obj):
                         print_error("The value for key 'protocol' must be tcp or udp.")
                         return False
                 elif key == 'port-range':
-                    if '-' in value and len(value.split('-')) == 2:
-                        start_port = value.split('-')[0]
-                        end_port = value.split('-')[1]
-                        if not start_port.isdecimal():
-                            print_error("The value for key 'port-range' is invalid. start_port must be an integer between 0 and 65535.")
-                            return False
-                        if not end_port.isdecimal():
-                            print_error("The value for key 'port-range' is invalid. end_port must be an integer between 0 and 65535.")
-                            return False
-                        start_port = int(start_port)
-                        end_port = int(end_port)
+                    if re.match(r"^[0-9]+-[0-9]+$", value):
+                        start_port = int(value.split('-')[0])
+                        end_port = int(value.split('-')[1])
                         if start_port not in range(0, 65536):
                             print_error("The value for key 'port-range' is invalid. start_port must be an integer between 0 and 65535.")
                             return False
